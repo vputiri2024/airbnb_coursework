@@ -1,14 +1,7 @@
 function MainModule(listingsID = "#listings") {
   const me = {};
 
-
   const listingsElement = document.querySelector(listingsID);
-
-  // function getName(name) {
-  //   return name
-  //
-  //
-  // }
 
   function getListingCode(listing) {
     return `<div class="col-4">
@@ -16,16 +9,13 @@ function MainModule(listingsID = "#listings") {
 
     <div class="card-body">
       <img src="${listing.picture_url}" alt="Image" width="350" height="200">
-      
-<!--      x_name, x_ddescription, x_amenities, x_host name and photo, x_price, x_thumbnail, creative addition-->
-      
+            
       <h2 class="card-title">${listing.name}</h2>
       
       <div>${listing.price}</div>
       <p class="description">${listing.description}</p>
       <p class="amenities">${listing.amenities}</p>
-      <img src="${listing.host_picture_url}" 
-      alt="Image">
+      <img src="${listing.host_picture_url}" alt="Image">
       <p class="host-name">${listing.host_name}</p>
       <p class="host-location">${listing.host_location}</p>
       <div>
@@ -56,7 +46,6 @@ function MainModule(listingsID = "#listings") {
     const res = await fetch("./airbnb_sf_listings_500.json");
     const listings = await res.json();
 
-
     me.redraw(listings.slice(0, 50));
   }
 
@@ -67,7 +56,6 @@ function MainModule(listingsID = "#listings") {
 }
 
 const main = MainModule();
-
 
 main.loadData();
 
