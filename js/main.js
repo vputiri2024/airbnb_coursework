@@ -24,8 +24,10 @@ function MainModule(listingsID = "#listings") {
       <div>${listing.price}</div>
       <p class="description">${listing.description}</p>
       <p class="amenities">${listing.amenities}</p>
-      <img src="${listing.host_picture_url}" alt="Image">
+      <img src="${listing.host_picture_url}" 
+      alt="Image">
       <p class="host-name">${listing.host_name}</p>
+      <p class="host-location">${listing.host_location}</p>
       <div>
       <a href="${listing.listing_url}" class="btn btn-primary" target="_blank">Go somewhere</a>
       </div>    
