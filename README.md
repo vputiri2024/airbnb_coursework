@@ -10,4 +10,4 @@ scrolling description or abbreviated / bulleted amenities, I would love to hear 
 did this.
 
 I did get a bogged down this week with childcare obligations and so I plan to work on 
-these issues a bit more tomorrow.
+these issues a bit more tomorrow to complete the effort.
